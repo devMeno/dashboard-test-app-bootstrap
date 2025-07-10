@@ -21,6 +21,10 @@ const Sidebar = () => {
         setTab("admins");
         router.push("/dashboard/admins");
     }
+    const handleDisconnect = () => {
+        //setTab("organizations");
+        router.push("/auth/login");
+    }
     return (
         <div className={'sidebar'}>
             <div className={'tabContainer'}>
@@ -47,7 +51,9 @@ const Sidebar = () => {
                         <div style={{margin:'0 auto',width:'fit-content'}}><Profile2UsersIcon color={`${tab === 'admins' ? '#246BFD' : '#9FA8BC'}`}/></div>
                     </button>
                 </div>
-                <button className={'sidebar-inactive-tab-button'}>
+                <button className={'sidebar-inactive-tab-button'}
+                     onClick={handleDisconnect}
+                >
                     <img src="/icons/logout.png" alt="" style={{width:'24px',height:'24px',margin:'0 auto'}} />
                 </button>
             </div>

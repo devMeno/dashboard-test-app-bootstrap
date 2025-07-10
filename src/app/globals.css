@@ -1,6 +1,13 @@
 /* styles/globals.css */
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
+@media (max-width: 1024px) {
+    body {
+      display: none;
+    }
+  }
+  
+
 .custom-class{
     width: 90px;
     background-color: red;

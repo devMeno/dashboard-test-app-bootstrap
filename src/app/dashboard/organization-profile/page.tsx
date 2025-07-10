@@ -10,7 +10,7 @@ const Page = () => {
     return (
         <div className={'organization-profile-box'}>
             <div className={'welcome-admin-box'}>
-                <span style={{fontSize:'20px',marginInline:'auto'}}>Bienvenue, Andri A.</span>
+                <span style={{fontSize:'20px',marginInline:'auto'}}>Hello admin !</span>
                 {editProfileState ? (
                     <button className={'floating-button'} style={{backgroundColor:'#E7EBF3',color:'#9FA8BC'}}
                         onClick={() => setEditProfileState(false)}

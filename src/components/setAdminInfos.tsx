@@ -22,21 +22,7 @@ const style = {
 
 const SetAdminInfos = () => {
     const [isBlock,setIsBlock] = useState(false);
-    const [open, setOpen] = useState(false);
-    const handleOpen = () => {
-        setOpen(true);
-    };
-    const handleClose = () => {
-        console.log('Modal button closed');
-        setOpen(false);
-    };
-    const [openDeleteDialog, setOpenDeleteDialog] = React.useState(false);
-    const handleOpenDeleteDialog = () => {
-        setOpenDeleteDialog(true);
-    };
-    const handleCloseDeleteDialog = () => {
-        setOpenDeleteDialog(false);
-    };
+
     return (
         <div>
             <form action="" style={{marginBottom:'24px'}}>
